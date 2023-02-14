@@ -1,0 +1,7 @@
+def sum_of_cubes_of_odds(lst):
+    """
+    Takes a list of numbers and returns the sum of the cubes of the odd numbers in the list.
+    """
+    odd_nums = [num for num in lst if num % 2 == 1]
+    cube_of_odds = [num**3 for num in odd_nums]
+    return sum(cube_of_odds)
